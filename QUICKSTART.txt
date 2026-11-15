@@ -1,0 +1,12 @@
+AGENTCONNECT AI QUICKSTART
+
+1) docker compose up -d
+2) cd backend && cp .env.example .env
+3) python -m venv .venv && source .venv/bin/activate
+4) pip install -r requirements.txt
+5) uvicorn app.main:app --reload --port 8000
+6) In another backend terminal: python -m app.workers.worker
+7) In another terminal: cd frontend && npm install && npm run dev
+8) Open http://localhost:5173 and register sample agents.
+
+See README.md for full setup, API details and production limitations.
